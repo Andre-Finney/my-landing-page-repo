@@ -209,7 +209,10 @@ function App() {
                   </li>
                 </ul>
 
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                <Button 
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                  onClick={() => window.open('https://payhip.com/b/vHp92', '_blank')}
+                >
                   Get Templates
                 </Button>
               </CardContent>
@@ -257,7 +260,10 @@ function App() {
                   </li>
                 </ul>
 
-                <Button className="w-full bg-amber-500 hover:bg-amber-600 text-white">
+                <Button 
+                  className="w-full bg-amber-500 hover:bg-amber-600 text-white"
+                  onClick={() => window.open('https://payhip.com/b/LyeMr', '_blank')}
+                >
                   Get Complete System
                 </Button>
               </CardContent>
@@ -300,7 +306,10 @@ function App() {
                   </li>
                 </ul>
 
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
+                <Button 
+                  className="w-full bg-green-600 hover:bg-green-700 text-white"
+                  onClick={() => window.open('https://payhip.com/b/cUrH5', '_blank')}
+                >
                   Start Pro Support
                 </Button>
               </CardContent>
@@ -336,79 +345,97 @@ function App() {
               <div className="bg-amber-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 6+
               </div>
-              <h3 className="font-semibold mb-2">Months Average</h3>
-              <p className="text-blue-100">IRS response time to correspondence</p>
+              <h3 className="font-semibold mb-2">Years Maximum</h3>
+              <p className="text-blue-100">IRS collection statute of limitations</p>
             </div>
             <div className="text-center">
-              <div className="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                24
+              <div className="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                100%
               </div>
-              <h3 className="font-semibold mb-2">Months Maximum</h3>
-              <p className="text-blue-100">Offer in Compromise processing time</p>
+              <h3 className="font-semibold mb-2">Legal & Ethical</h3>
+              <p className="text-blue-100">Based on IRS's own rules and procedures</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to Take Control of Your IRS Situation?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Don't let tax debt control your life. Join thousands who have successfully used this system 
-            to eliminate their IRS liabilities legally and ethically.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              onClick={() => scrollToSection('products')}
-              className="bg-amber-500 hover:bg-amber-600 text-white px-12 py-4 text-xl font-semibold"
-            >
-              Get Started Today
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-blue-900 px-12 py-4 text-xl"
-            >
-              Learn More
-            </Button>
+      {/* Testimonials */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-blue-900 mb-6">
+              What Our Users Say
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Real stories from individuals who successfully navigated their IRS challenges.
+            </p>
           </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="border-2 border-gray-100 shadow-md">
+              <CardContent className="p-6">
+                <Star className="w-6 h-6 text-amber-500 mb-3" />
+                <Star className="w-6 h-6 text-amber-500 mb-3" />
+                <Star className="w-6 h-6 text-amber-500 mb-3" />
+                <Star className="w-6 h-6 text-amber-500 mb-3" />
+                <Star className="w-6 h-6 text-amber-500 mb-3" />
+                <p className="text-gray-700 italic mb-4">
+                  "I was drowning in tax debt and felt hopeless. This system gave me a lifeline. 
+                  I followed the steps, and now I can finally see a light at the end of the tunnel.
+                  The peace of mind is priceless."
+                </p>
+                <p className="font-semibold text-blue-900">- Sarah L., Small Business Owner</p>
+              </CardContent>
+            </Card>
+            <Card className="border-2 border-gray-100 shadow-md">
+              <CardContent className="p-6">
+                <Star className="w-6 h-6 text-amber-500 mb-3" />
+                <Star className="w-6 h-6 text-amber-500 mb-3" />
+                <Star className="w-6 h-6 text-amber-500 mb-3" />
+                <Star className="w-6 h-6 text-amber-500 mb-3" />
+                <Star className="w-6 h-6 text-amber-500 mb-3" />
+                <p className="text-gray-700 italic mb-4">
+                  "I was skeptical at first, but David's approach is genius. 
+                  The templates are clear, and the strategy is sound. 
+                  I'm no longer afraid of the IRS, and I'm actively working towards resolving my situation."
+                </p>
+                <p className="font-semibold text-blue-900">- Mark T., Retired Veteran</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action / Final Offer */}
+      <section className="py-20 bg-blue-900 text-white text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-6">
+            Ready to Outlast The IRS?
+          </h2>
+          <p className="text-xl mb-8">
+            Take control of your tax debt and gain peace of mind. 
+            Choose the solution that's right for you and start your journey to financial freedom today.
+          </p>
+          <Button 
+            size="lg" 
+            onClick={() => scrollToSection('products')}
+            className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 text-lg"
+          >
+            Get Started Now
+          </Button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">Outlast The IRS</h3>
-              <p className="text-gray-400">
-                Empowering individuals with legal strategies to manage tax debt and achieve financial freedom 
-                without expensive tax professionals.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Important Disclaimer</h4>
-              <p className="text-gray-400 text-sm">
-                This system provides educational information only and does not constitute legal or tax advice. 
-                You are solely responsible for any documents you choose to send to the IRS. 
-                Consult with qualified professionals for your specific situation.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-gray-400 text-sm">
-                For questions about these products, please contact our support team through the 
-                Pro Support Plan or visit our contact page.
-              </p>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Outlast The IRS. All rights reserved.</p>
-          </div>
+      <footer className="bg-gray-800 text-gray-300 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="mb-4">
+            &copy; {new Date().getFullYear()} Outlast The IRS. All rights reserved.
+          </p>
+          <p className="text-sm">
+            Disclaimer: This information is for educational purposes only and not legal or tax advice. 
+            Consult with a qualified professional for personalized guidance.
+          </p>
         </div>
       </footer>
     </div>
@@ -416,4 +443,5 @@ function App() {
 }
 
 export default App
+
 
