@@ -209,12 +209,16 @@ function App() {
                   </li>
                 </ul>
 
-                <Button 
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                  onClick={() => window.open('https://payhip.com/b/vHp92', '_blank')}
+                <a 
+                  href="https://payhip.com/b/vHp92"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full"
                 >
-                  Get Templates
-                </Button>
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                    Get Templates
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -260,12 +264,16 @@ function App() {
                   </li>
                 </ul>
 
-                <Button 
-                  className="w-full bg-amber-500 hover:bg-amber-600 text-white"
-                  onClick={() => window.open('https://payhip.com/b/LyeMr', '_blank')}
+                <a 
+                  href="https://payhip.com/b/LyeMr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full"
                 >
-                  Get Complete System
-                </Button>
+                  <Button className="w-full bg-amber-500 hover:bg-amber-600 text-white">
+                    Get Complete System
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -306,12 +314,16 @@ function App() {
                   </li>
                 </ul>
 
-                <Button 
-                  className="w-full bg-green-600 hover:bg-green-700 text-white"
-                  onClick={() => window.open('https://payhip.com/b/cUrH5', '_blank')}
+                <a 
+                  href="https://payhip.com/b/cUrH5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full"
                 >
-                  Start Pro Support
-                </Button>
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
+                    Start Pro Support
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
